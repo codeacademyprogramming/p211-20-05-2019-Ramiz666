@@ -1,0 +1,45 @@
+@charset "UTF-8";
+body {
+  height: 15000px;
+}
+
+nav {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#demo {
+  padding: 100px 0;
+}
+
+#demo .wrapper {
+  position: relative;
+}
+
+#demo .wrapper img {
+  position: relative;
+  max-width: 100%;
+  height: 600px;
+  z-index: 1;
+}
+
+#demo .wrapper::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 300px;
+  bottom: 100px;
+  left: -100px;
+}
+
+#demo .wrapper::after {
+  content: "☭";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  z-index: 5;
+}
+/*# sourceMappingURL=style.css.map */
